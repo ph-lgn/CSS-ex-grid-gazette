@@ -66,15 +66,19 @@ header img {
     gap: 80px;
     width: 50%;
     margin: 80px auto;
-   
-
 }
 .blogFlag {
+    width: 100%;
     margin-bottom: 30px;
     a:first-child {
         padding: 5px;
         background: red;
         color: white;
+    }
+    h4 {
+        font-family: 'PT Serif', serif;
+        font-size: 35px;
+        font-weight: 400;
     }
     img {
         width: 700px;
@@ -105,8 +109,6 @@ header img {
      
     }
 }
-.blogBreakNews {
-    margin-bottom: 30px;
     
     .wrapNews {
         position: relative;
@@ -157,7 +159,7 @@ header img {
         transform: translate(-50%,-50%);
 }
     
-}
+
 .blogDontMiss {
     margin-bottom: 30px;
     img {
