@@ -1,6 +1,75 @@
-header {
-    
-    img {
+// ---------------------------1 navigation --------------
 
+nav {
+    width: 100%;
+    margin-top: 65px;
+    border-top: 1px solid rgb(183, 183, 183);
+    padding: 25px;
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        a {
+            text-transform: uppercase;
+            padding-right: 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+}
+
+
+nav a:first-child{
+    color: red;
+}
+header img {
+    width: 300px;
+}
+
+
+// --------------- 2 swiper --------------------
+.swiperImg {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    img {
+        width: 100%;
+        
+        position: relative;
+  
     }
 }
+
+
+.filterImg::before {
+    content: '';
+    @include posabs;
+    background-color: rgba(5, 5, 5, 0.431);
+    z-index: 100;
+   
+
+}
+.swipWrap{
+   position: relative;
+   
+}
+.swipAbsolute{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+
+    a:not(a:nth-of-type(2)) {
+        color: white;
+        background: red;
+        padding: 5px;
+        }
+    a {
+        color: white;
+
+    }
+    span {
+        color: white;
+    }
+   
+} 
