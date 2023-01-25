@@ -1,5 +1,21 @@
 .aboutus {
     width: 100%;
-    height: 500px;
+    height: 150px;
     background: #efefef;
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: end;
+        align-items: center;
+        div {
+            font-size: 25px;
+            font-family: 'PT Serif', serif;
+        }
+        span { 
+            font-style: italic;
+            color: grey;
+        }
+
+    }
 }
+
