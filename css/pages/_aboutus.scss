@@ -1,0 +1,96 @@
+.aboutus {
+    width: 100%;
+    background: #efefef;
+    .wrapper {
+        height: 150px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+        div {
+            font-size: 25px;
+            font-family: 'PT Serif', serif;
+        }
+        span { 
+            font-style: italic;
+            color: grey;
+        }
+
+    }
+}
+// 3 article
+
+.article div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap:30px;
+}
+
+h2 {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+p {
+    color: grey;
+    line-height: 28px;
+}
+
+// 4 grid d'images team
+h3 {
+    font-family: 'PT Serif', serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+.articleGridImg {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.socialTeam {
+    display: flex;
+    justify-content: space-between;
+    span {
+        font-family: 'PT Serif', serif;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+    }
+    a {
+        color: grey;
+    }
+}
+
+// 5 avant footer bg attachement
+
+.joinTeam {
+    background-image: url(../blog-img/cta.jpg);
+    background-attachment: fixed;
+    height: 400px;
+    position: relative;
+    
+}
+.joinTeam::before {
+    content: '';
+     @include posabs;
+    background-color: rgba(19, 17, 17, 0.631);
+}
+
+.wrapJoinTeam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h3 {
+        color: white;    
+        z-index: 10;
+    }
+    p {
+        color: rgb(139, 130, 130);
+        z-index: 10;
+    }
+   
+}
