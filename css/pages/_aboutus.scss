@@ -18,8 +18,12 @@
     }
 }
 // 3 article
-
+.wrapArticle {
+    margin: 0 auto;
+    width: 60%;
+}
 .article div {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
@@ -47,6 +51,7 @@ h3 {
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
     gap: 30px;
+    margin-bottom: 50px;
 }
 
 .socialTeam {
@@ -73,6 +78,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+   
     
 }
 .joinTeam::before {
@@ -81,13 +87,14 @@ h3 {
     background-color: rgba(19, 17, 17, 0.631);
 }
 
-.imgFilter
+
 
 .wrapJoinTeam {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 50%;
     
     h3 {
         color: white;    

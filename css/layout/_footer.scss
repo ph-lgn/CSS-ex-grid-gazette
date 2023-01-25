@@ -40,6 +40,7 @@
 }
 // 7 footer
 footer {
+    font-family: 'PT Serif', serif;
     color: white;
     width: 100%;
     height: 600px;
@@ -71,10 +72,13 @@ footer {
 .footerList * {
     width: 10%;
         h4 {
-            font-size: 20px;
+            font-size: 30px;
+            font-weight: 400;
         }
         a {
             color: white;
+            font-size: 15px;
+            line-height: 25px;
         }
 }
 footer::before {
@@ -83,12 +87,19 @@ footer::before {
     background-color: rgba(19, 17, 17, 0.631);
    
 }
-.bottom {
-    width: 90%;
+
+// smaller dans footer
+
+.smaller {
     display: flex;
-    align-items: flex-end;
-    justify-content:flex-end ;
-    
+    justify-content: space-between;
+    width: 100%;
+}
+small {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 .bottom a{
     align-self: flex-end;
