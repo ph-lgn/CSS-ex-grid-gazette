@@ -106,8 +106,12 @@ h3 {
         text-align: center;
     }
     a {
+        border: 2px solid white;
+        padding: 15px 25px;
         color: white;
         z-index: 10;
+        font-family: 'PT Serif', serif;
+        font-size: 25px;
     }
    
 }
