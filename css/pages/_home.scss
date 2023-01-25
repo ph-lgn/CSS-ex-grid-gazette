@@ -3,6 +3,17 @@
 
 // 3---------- blog en grid
 
+// global
+.borderH5 {
+    border-bottom: 1px solid grey;
+   
+}
+
+.marginBloc {
+    margin-top: 30px;
+}
+// fin global
+
 .blocDeBlog {
     display: grid;
     grid-template-columns: 700px 300px;
@@ -92,10 +103,10 @@
 
        .wrapBlogTodays {
         width: 400px;
-        
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        gap: 15px;
             a:nth-of-type(2) {
                 color:black;
                 font-size: 25px;
@@ -112,56 +123,21 @@
      
     }
 }
+// 3---- breaking news en absolute
+  
+.wrapNews {
+    position: relative;
+        img {
+        width: 250px;
+    }
     
-    .wrapNews {
-        position: relative;
-
-
-            img {
-            width: 250px;
+}
+.titleNews {
+        span {
+            background: red;
+            padding: 5px;
         }
-        
-    }
-    .titleNews {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: flex-start;
-        // align-items: flex-start;
-        // width:250px;
-        // height: 100%;
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%,-50%);
-            span {
-                background: red;
-                padding: 5px;
-            }
-    }
-    // .titleNews::before {
-    //     content: '';
-    //     width: 100%;
-    //     height: 30px;
-    //     position: absolute;
-    //     top: 5px;
-    //     left: 50%;
-    //     transform: translate(-50%,-50%);
-    //    background: rgba(0, 0, 0, 0.582);
-    //    z-index: -1;
-    // }
-    // .txtNews {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: flex-end;
-        // align-items: center;
-        // width: 250px;
-        // height: 100%;
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%,-50%);
-// }
-    
+}
 
 .blogDontMiss {
     margin-bottom: 30px;
@@ -174,6 +150,35 @@
         width: 69px;
     }
 }
+.spaceEu {
+    margin-bottom: 15px;
+}
+.wrapEu {
+    display: flex;
+    flex-direction: column;
+   
+}
+.flexEu {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 25px;
+
+    a {
+        color: black;
+        font-family: 'PT Serif', serif;
+    }
+    a:hover {
+        color: red;
+        transition: .3s all ease-in-out;
+    }
+    span {
+        color: grey;
+        font-size: 13px;
+        font-style: italic;
+    }
+}
+
 
 .blogAdvert {
     color: black;
@@ -181,6 +186,9 @@
         font-size: 25px;
         text-transform: uppercase;
         font-weight: 400;
+    }
+    img {
+        width: 255px;
     }
 }
 
@@ -216,24 +224,77 @@
 // 4 blog en grid plus petit
 
 .suiteDeTitres {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr repeat(2, 150px) 1fr;
-    justify-items: center;
-    gap: 30px;
+    .wrapper {
+      display: grid;
+      
+    }
 }
+
 .article1 {
+    
     img {
         width: 350px;
     }
+    a {
+        font-family: 'PT Serif', serif;
+        font-size: 20px;
+        color: black;
+    }
+  
+    .borderArticle {
+        border-bottom: 1px solid rgb(162, 160, 160);
+        color: grey;
+        line-height: 45px;
+        font-style: italic;
+        font-size: 14px;
+    }
+
 }
+// ---------global
+
+.video {
+    margin: 20px 0;
+}
+
+.video a{
+    background: red;
+    padding: 5px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    align-self: flex-start;
+}
+.article2, .article3 {
+    width: 80%;
+    a:not(.article2 a:first-child, .article3 a:first-child) {
+        color: black;
+    }
+    h6 {
+        font-family: 'PT Serif', serif;
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0;
+
+    }
+}
+.dateArticle {
+    color: grey;
+    line-height: 45px;
+    font-style: italic;
+    font-size: 14px;
+}
+//  -------------end global
 .article2 {
     img {
         width:160px;
     }
+
 }
 .article3 {
+    h6 {
+        font-family: 'PT Serif', serif;
+    }
     img {
         width:160px;
     }
@@ -244,14 +305,48 @@
     height: 600px;
     background: rgb(247, 242, 242);
 }
-.beforeFooter {
+.wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    width: 50%;
-    margin: 50px auto;
-    padding: 80px;
-    img {
-        width: 255px;
+   
+    position: relative;    
+}
+.wrapPlayImg {
+    position: relative;
+    .btnPlay {
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        a {
+            color: white;
+        }
     }
+    .imgPlay {
+        position: relative;
+        height: 155px;
+        img{
+        height: 100%;
+    }
+    }
+    
+    .imgPlay:hover::before {
+        content: '';
+        @include posabs;
+        background: rgba(0, 0, 0, 0.474);
+        cursor: pointer;
+        z-index: 1;
+    }
+}
+.commentPlay {
+        
+    a{
+        cursor: none;
+    color: black;
+    font-size: 20px;
+    line-height: 25px;
+    z-index: 10;
+}
 }

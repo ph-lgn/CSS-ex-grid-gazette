@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gazette page principale</title>
+    <!-- fav incon -->
+
     <link rel="stylesheet" href="css/normalize.min.css">
     <!-- font ici et fontawesome-->
     <script src="https://kit.fontawesome.com/404c392841.js" crossorigin="anonymous"></script>
@@ -16,6 +18,7 @@
 <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.min.css">
+
 </head>
 <body>
     <!-- 1 header + nav-->
@@ -30,7 +33,7 @@
                 <div class="wrapper">
                   
                         <div>
-                            <a href="#">today</a>
+                            <a href="#">page About</a>
                             <a href="#">politics</a>
                             <a href="#">lifestyle</a>
                             <a href="#">travel</a>
@@ -50,40 +53,39 @@
                 <img src="bg-img/2.jpg" alt="toit">
             </div>
             <div class="swipAbsolute">
-                <a href="#">live</a>
+                <a href="#"  class="bgRed">live</a>
                 <a href="#">
-                    <h3>the lastest news live</h3>
+                    <h3>The lastest news live</h3>
                 </a>
-                <span>march 29, 2018</span>
+                <a href="#">march 29, 2018</a>
             </div>
         </div>
-       
-       
         <div class="swipWrap">
             <div class="filterImg">
                 <img src="bg-img/2.jpg" alt="toit">
             </div>
             <div class="swipAbsolute">
-                <a>live</a>
-                <a href="">
-                    <h3>the lastest news live</h3>
+                <a href="#"  class="bgRed">live</a>
+                <a href="#">
+                    <h3>The lastest news live</h3>
                 </a>
-                <span>march 29, 2018</span>
+                <a href="#">march 29, 2018</a>
             </div>
         </div>
-       
         <div class="swipWrap">
             <div class="filterImg">
                 <img src="bg-img/2.jpg" alt="toit">
             </div>
             <div class="swipAbsolute">
-                <a>live</a>
-                <a href="">
-                    <h3>the lastest news live</h3>
+                <a href="#"  class="bgRed">live</a>
+                <a href="#">
+                    <h3>The lastest news live</h3>
                 </a>
-                <span>march 29, 2018</span>
+                <a href="#">march 29, 2018</a>
             </div>
         </div>
+       
+       
        
        
     </div>
@@ -112,7 +114,9 @@
                     </div>
                      <!-- 2 -->
                 <div class="blogTodays">
-                    <h5>today's most popular</h5>
+                    <div class="borderH5">
+                        <h5>today's most popular</h5>
+                    </div>
                     <div class="blogTodaysGrid">
                         <img src="blog-img/2.jpg" alt="journal">  
                         <div class="wrapBlogTodays">
@@ -141,7 +145,9 @@
                         <img src="blog-img/bn-1.jpg" alt="enfants pancartes">
                         <div class="titleNews"><span>breaking news</span></div>
                         <div class="txtNews">
-                            <h5>china leades news global skryscraper record</h5>
+                            <div class="txtNews">
+                                <h5>china leades news global skryscraper record</h5>
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -152,34 +158,47 @@
                         </div>
                     </div>
                     <div class="blogDontMiss">
-                        <h5>don't miss</h5>
-                        <div>
-                            <img src="blog-img/15.jpg" alt="home">
-                            <span>EU council reunites</span>
-                            <span>Nov 29, 2018</span>
+                        <div class="borderH5">
+                            <h5>don't miss</h5>
                         </div>
-                        <div>
-                            <img src="blog-img/15.jpg" alt="home">
-                            <span>EU council reunites</span>
-                            <span>Nov 29, 2018</span>
+                        <div class="marginBloc flexEu">
+                            <div class="spaceEu"><img src="blog-img/15.jpg" alt="home"></div>
+                            <div class="wrapEu">
+                                <a href="#">EU council reunites</a>
+                                <span>Nov 29, 2018</span>
+                            </div>
                         </div>
-                        <div>
-                            <img src="blog-img/15.jpg" alt="home">
-                            <span>EU council reunites</span>
-                            <span>Nov 29, 2018</span>
+                        <div class="flexEu">
+                            <div class="spaceEu"><img src="blog-img/dm-2.jpg" alt="home"></div>
+                            <div class="wrapEu">
+                                <a href="#">EU council reunites</a>
+                                <span>Nov 29, 2018</span>
+                            </div>
                         </div>
+                        <div class="flexEu">
+                            <div class="spaceEu"><img src="blog-img/dm-3.jpg" alt="home"></div>
+                            <div class="wrapEu">
+                                <a href="#">EU council reunites</a>
+                                <span>Nov 29, 2018</span>
+                            </div>
                     </div> 
                     <!-- 4 -->
                     <div class="blogAdvert">
-                        <h5>Advert</h5>
-                        <img src="bg-img/add.png" alt="add">
+                        <div class="borderH5">
+                            <h5>Advert</h5>
+                        </div>
+                        <div class="marginBloc"><img src="bg-img/add.png" alt="add"></div>
                     </div>
                     
                     <div class="blogSubscribe">
-                            <h5>subscribe</h5>
-                            <div class="inputEmail">
-                                <div><input type="text" placeholder="Your Email"></div>
-                                <a href="#">subscribe</a>
+                            <div class="borderH5">
+                                <h5>subscribe</h5>
+                            </div>
+                            <div class="marginBloc">
+                                <div class="inputEmail">
+                                    <div><input type="text" placeholder="Your Email"></div>
+                                    <a href="#">subscribe</a>
+                                </div>
                             </div>
                         </div>
                     </div> 
@@ -192,106 +211,154 @@
 
     <!-- 4 blog en grid plus court-->
     <div class="suiteDeTitres">
-            <div class="article1">
-                <img src="blog-img/12.jpg" alt="main">
-                <a href="#">video</a>
-                <a href="#">
-                    <span>Save the eniroment with this step</span>
-                    <span>nov 29, 2017</span>
-                </a>
-                <a href="#">
-                    <span>Save the eniroment with this step</span>
-                    <span>nov 29, 2017</span>
-                </a>
-                <a href="#">
-                    <span>Save the eniroment with this step</span>
-                    <span>nov 29, 2017</span>
-                </a>
-                <a href="#">
-                    <span>Save the eniroment with this step</span>
-                    <span>nov 29, 2017</span>
-                </a>
+            <div class="wrapper">
+                <div class="article1">
+                    <img src="blog-img/12.jpg" alt="main">
+                    <div class="video"><a href="#">video</a></div>
+                    <div>
+                        <a href="#">
+                            <span>Save the enviroment with this step</span>
+                        </a>
+                    </div>
+                        <div class="borderArticle"><span>nov 29, 2017</span></div>
+                    <div>
+                     <a href="#">
+                         <span>Save the enviroment with this step</span>
+                     </a>
+                     </div>
+                     <div class="borderArticle"><span>nov 29, 2017</span></div>
+                    <div>
+                        <a href="#">
+                        <span>Save the enviroment with this step</span>
+                        </a>
+                    </div>
+                    <div class="borderArticle"><span>nov 29, 2017</span></div>
+                    <div>
+                        <a href="#">
+                            <span>Save the enviroment with this step</span>
+                        </a>
+                    </div>
+                    <div class="borderArticle"><span>nov 29, 2017</span></div>
+                </div>
+                           
+                    <div class="article2">
+                        <img src="blog-img/14.jpg" alt="bouqins">
+                        <div class="video"><a href="#">others</a></div>
+                        <a href="#"><h6>11 hottest toys for this holiday season</h6></a>
+                        <div class="dateArticle">Nov, 29</div>
+                        <img src="blog-img/15.jpg" alt="bouqins">
+                        <div class="video"><a href="#">others</a></div>
+                        <a href="#"><h6>11 hottest toys for this holiday season</h6></a>
+                        <div class="dateArticle">Nov, 29</div>
+                    </div> 
+                
+                    <div class="article3">
+                        <img src="blog-img/16.jpg" alt="bouqins">
+                        <div class="video"><a href="#">others</a></div>
+                        <a href="#"><h6>11 hottest toys for this holiday season</h6></a>
+                        <div class="dateArticle">Nov, 29</div>
+                        <img src="blog-img/17.jpg" alt="bouqins">
+                        <div class="video"><a href="#">others</a></div>
+                        <a href="#"><h6>11 hottest toys for this holiday season</h6></a>
+                        <div class="dateArticle">Nov, 29</div>
+                    </div> 
+            
+                        <div class="article1">
+                            <img src="blog-img/13.jpg" alt="main">
+                            <div class="video"><a href="#">video</a></div>
+                            <div>
+                                <a href="#">
+                                    <span>Save the enviroment with this step</span>
+                                </a>
+                            </div>
+                                <div class="borderArticle"><span>nov 29, 2017</span></div>
+                            <div>
+                             <a href="#">
+                                 <span>Save the enviroment with this step</span>
+                             </a>
+                             </div>
+                             <div class="borderArticle"><span>nov 29, 2017</span></div>
+                            <div>
+                                <a href="#">
+                                <span>Save the enviroment with this step</span>
+                                </a>
+                            </div>
+                            <div class="borderArticle"><span>nov 29, 2017</span></div>
+                            <div>
+                                <a href="#">
+                                    <span>Save the enviroment with this step</span>
+                                </a>
+                            </div>
+                            <div class="borderArticle"><span>nov 29, 2017</span></div>
+                        </div>
             </div>
-           
-        <div class="article2">
-            <img src="blog-img/14.jpg" alt="bouqins">
-            <a href="#">others</a>
-            <a href="#"><h6>11 hottest toys for this holiday season</h6></a>
-            <span>Nov 29, 2017</span>
-            <img src="blog-img/14.jpg" alt="bouqins">
-            <a href="#">others</a>
-            <a href="#"><h6>11 hottest toys for this holiday season</h6></a>
-            <span>Nov 29, 2017</span>
-        </div> 
-
-        <div class="article3">
-            <img src="blog-img/14.jpg" alt="bouqins">
-            <a href="#">others</a>
-            <a href="#"><h6>11 hottest toys for this holiday season</h6></a>
-            <span>Nov 29, 2017</span>
-            <img src="blog-img/14.jpg" alt="bouqins">
-            <a href="#">others</a>
-            <a href="#"><h6>11 hottest toys for this holiday season</h6></a>
-            <span>Nov 29, 2017</span>
-        </div> 
-
-        <div class="article1">
-            <img src="blog-img/12.jpg" alt="main">
-            <a href="#">video</a>
-            <a href="#">
-                <span>Save the eniroment with this step</span>
-                <span>nov 29, 2017</span>
-            </a>
-            <a href="#">
-                <span>Save the eniroment with this step</span>
-                <span>nov 29, 2017</span>
-            </a>
-            <a href="#">
-                <span>Save the eniroment with this step</span>
-                <span>nov 29, 2017</span>
-            </a>
-            <a href="#">
-                <span>Save the eniroment with this step</span>
-                <span>nov 29, 2017</span>
-            </a>
-        </div>  
     
     </div>
     <!-- 5 blog en grid abant footer-->
     <div class="wrapBeforeFooter">
-        <div class="beforeFooter">
-                <div>
-                    <img src="blog-img/4.jpg" alt="manif">
-                    <a href="#">show suspended by PBS amid misconduct allegations</a>
+        <div class="wrapper">
+
+            <div>
+                <div class="wrapPlayImg">
+                    <div class="btnPlay"><a href="" class="fa-solid fa-play"></a></div>
+                    <div class="imgPlay"><img src="blog-img/4.jpg" alt="manif"></div>
                 </div>
-                <div>
-                    <img src="blog-img/4.jpg" alt="manif">
-                    <a href="#">show suspended by PBS amid misconduct allegations</a>
+                <div class="commentPlay"><a href="#">show suspended by PBS amid misconduct allegations</a></div>
+            </div>
+            <div>
+                <div class="wrapPlayImg">
+                    <div class="btnPlay"><a href="" class="fa-solid fa-play"></a></div>
+                    <div class="imgPlay"><img src="blog-img/5.jpg" alt="manif"></div>
                 </div>
-                <div>
-                    <img src="blog-img/4.jpg" alt="manif">
-                    <a href="#">show suspended by PBS amid misconduct allegations</a>
+                <div class="commentPlay"><a href="#">show suspended by PBS amid misconduct allegations</a></div>
+            </div>
+            <div>
+                <div class="wrapPlayImg">
+                    <div class="btnPlay"><a href="" class="fa-solid fa-play"></a></div>
+                    <div class="imgPlay"><img src="blog-img/6.jpg" alt="manif"></div>
                 </div>
-                <div>
-                    <img src="blog-img/4.jpg" alt="manif">
-                    <a href="#">show suspended by PBS amid misconduct allegations</a>
+                <div class="commentPlay"><a href="#">show suspended by PBS amid misconduct allegations</a></div>
+            </div>
+            <div>
+                <div class="wrapPlayImg">
+                    <div class="btnPlay"><a href="" class="fa-solid fa-play"></a></div>
+                    <div class="imgPlay"><img src="blog-img/7.jpg" alt="manif"></div>
                 </div>
-                <div>
-                    <img src="blog-img/4.jpg" alt="manif">
-                    <a href="#">show suspended by PBS amid misconduct allegations</a>
+                <div class="commentPlay"><a href="#">show suspended by PBS amid misconduct allegations</a></div>
+            </div>
+            <div>
+                <div class="wrapPlayImg">
+                    <div class="btnPlay"><a href="" class="fa-solid fa-play"></a></div>
+                    <div class="imgPlay"><img src="blog-img/8.jpg" alt="manif"></div>
                 </div>
-                <div>
-                    <img src="blog-img/4.jpg" alt="manif">
-                    <a href="#">show suspended by PBS amid misconduct allegations</a>
+                <div class="commentPlay"><a href="#">show suspended by PBS amid misconduct allegations</a></div>
+            </div>
+            <div>
+                <div class="wrapPlayImg">
+                    <div class="btnPlay"><a href="" class="fa-solid fa-play"></a></div>
+                    <div class="imgPlay"><img src="blog-img/9.jpg" alt="manif"></div>
                 </div>
-                <div>
-                    <img src="blog-img/4.jpg" alt="manif">
-                    <a href="#">show suspended by PBS amid misconduct allegations</a>
+                <div class="commentPlay"><a href="#">show suspended by PBS amid misconduct allegations</a></div>
+            </div>
+            <div>
+                <div class="wrapPlayImg">
+                    <div class="btnPlay"><a href="" class="fa-solid fa-play"></a></div>
+                    <div class="imgPlay"><img src="blog-img/10.jpg" alt="manif"></div>
                 </div>
-                <div>
-                    <img src="blog-img/4.jpg" alt="manif">
-                    <a href="#">show suspended by PBS amid misconduct allegations</a>
+                <div class="commentPlay"><a href="#">show suspended by PBS amid misconduct allegations</a></div>
+            </div>
+            <div>
+                <div class="wrapPlayImg">
+                    <div class="btnPlay"><a href="" class="fa-solid fa-play"></a></div>
+                    <div class="imgPlay">
+                        <img src="blog-img/11.jpg" alt="manif"></div>
                 </div>
+                <div class="commentPlay"><a href="#">show suspended by PBS amid misconduct allegations</a></div>
+            </div>
+                
+               
+                
+               
         </div>
     </div>
     <!-- 6 swiper black -->

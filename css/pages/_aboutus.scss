@@ -80,12 +80,9 @@ h3 {
      @include posabs;
     background-color: rgba(19, 17, 17, 0.631);
 }
-.wrapTeam {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+.imgFilter
+
 .wrapJoinTeam {
     display: flex;
     flex-direction: column;
